@@ -1,0 +1,16 @@
+create database app
+
+CREATE TABLE `userinfo` (
+  `Uid` int(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  `Nom` varchar(20) NOT NULL,
+  `Email` varchar(30) NOT NULL,
+  `Password` varchar(25) NOT NULL,
+  `img` blob NOT NULL
+);
+
+
+CREATE TABLE `message` (
+  `idmessage` int(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  `message` text DEFAULT NULL,
+  `UidF` int(11) DEFAULT NULL
+);
